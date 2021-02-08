@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+    <div class="Title">
+       <h1>Login</h1>
+    </div>
+
+    <form action="#">
+         <div class="form"> 
+             <h2><input type="text" name="username" placeholder="username" id="name">
+            <input type="password" name="password" placeholder="password" id="pwd"><br>
+            <button onclick="test();">Login</button></h2>
+        </div>
+    </form> 
+    </div>
+
+    <script>
+        function test()
+        {
+            var user = document.getElementById("name").value;
+            var pass = document.getElementById("pwd").value;
+
+            if(((user == "foo") &&(pass == "bar")))
+            {
+                alert("Success");
+            }else{
+                alert("User name is wrong, please fill in again");
+
+            }
+
+
+        }
+        
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+.container3 {
+    background-color: black;
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+    color:tomato;
+}
+
+.pix {
+    text-align: center;
+    margin-top: 5px;
+}
+.para3 {
+    padding: 10px;
+    background-color: #fdfaf2;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    border: 2px solid #FFF6DD;
+    border-radius: 18px;
+    color: red;
+}
+.vdo {
+    padding: 10px;
+    text-align: center;
+    background-color:#fcf7eb;
+}
+.footer3 {
+    padding: 20px;
+    text-align: center;
+    background:black;
+    margin-top: 20px;
+    color: wheat;
+}

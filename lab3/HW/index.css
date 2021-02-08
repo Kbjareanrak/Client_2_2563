@@ -1,0 +1,85 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: mistyrose;
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+.container2 {
+    background-color: #bbded6;
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.animation {
+        background-color: white;
+        position: relative;
+        animation: mymove 7s infinite;
+        animation-timing-function: linear;  
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 1000px;}
+  }
+
+.para1{
+    padding: 10px;
+    background-color: #fff8e8;
+    margin-left: 40px;
+    margin-right: 600px;
+    margin-top: 50px;
+    border: 2px solid #FFF6DD;
+    border-radius: 18px;
+  }
+.para2{
+    padding: 10px;
+    background-color: #fff8e8;
+    margin-left: 40px;
+    margin-right: 600px;
+    margin-top: 25px;
+    border: 2px solid #FFF6DD;
+    border-radius: 18px;
+}
+.para3 {
+    padding: 10px;
+    background-color: #fdfaf2;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    border: 2px solid #FFF6DD;
+    border-radius: 18px;
+}
+.textName {
+    padding: 3px;
+    text-align: left;
+    background: #e1f3ef;
+    margin-top: 20px;
+}
+.vdo {
+    padding: 10px;
+    text-align: center;
+    background-color:#fcf7eb;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background:  mistyrose;
+    margin-top: 20px;
+  }
+.footer2 {
+    padding: 20px;
+    text-align: center;
+    background: #bbded6;
+    margin-top: 20px;
+}
+
+.pix {
+    text-align: center;
+    margin-top: 5px;
+}

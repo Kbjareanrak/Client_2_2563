@@ -1,0 +1,28 @@
+* {
+    font-family: monospace;
+}
+body {
+    margin: 0px;
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(217, 245, 176);
+    width: 300px;
+    border: 5px solid black;
+    padding: 50px;
+    margin: 150px auto;
+}
+
+.Title {
+    color:black;
+    text-align: left;
+    border-radius: 10px;
+}
+.form input {
+    width: 300px ;
+}
+.form button {
+    width: 300px ;
+
+}
