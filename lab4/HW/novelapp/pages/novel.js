@@ -1,18 +1,27 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import styles from '../styles/novel.module.css'
 
 const Novel = () => {
  
-    const [tasks, setTasks] = useState([
-        { id: 1, name: 'เชอร์ล็อก โฮมส์ ตอน เหตุอื้อฉาวในโบฮีเมีย (A Scandle in Bohemie)', nameType: 'สืบสวน สอบสวน'},
-        { id: 2, name: 'เชอร์ล็อก โฮมส์ ตอน คู่หมั้นจำแลง (A Case of Identity)', nameType: 'สืบสวน สอบสวน' }
-    ])
+    const [tasks, setTasks] = useState([])
+        // { id: 1, name: 'เชอร์ล็อก โฮมส์ ตอน เหตุอื้อฉาวในโบฮีเมีย (A Scandle in Bohemie)', nameType: 'สืบสวน สอบสวน'},
+        // { id: 2, name: 'เชอร์ล็อก โฮมส์ ตอน คู่หมั้นจำแลง (A Case of Identity)', nameType: 'สืบสวน สอบสวน' }
+    // ])
     
     const [name, setName] = useState('')
 
     const [nameType, setTypeName] = useState('')
 
     const [idEdit, setIdEdit] = useState(0)
+
+    useEffect( async () => {
+        let ts = await getTasks();
+        console.log(ts)
+        setTasks(ts) 
+    }, [] )
+ 
 
     const renderTasks = () => {
         if (tasks !== null)
@@ -95,5 +104,12 @@ const Novel = () => {
         </div>
     )
  }
+
+ const getTasks = async () => {
+    const res = await fetch('http://localhost:8000/')
+    const json = await res.json()
+    console.log(json)
+    return json;
+ } 
   
  export default Novel
