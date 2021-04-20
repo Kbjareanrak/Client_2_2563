@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+</head>
+<body>
+    <input type="text" name="num1" placeholder="num1" id="num1">
+    + 
+    <input type="text" name="num2" placeholder="num2" id="num2">
+    <button onclick="cal();">Pluss</button>
+
+    <script>
+        function cal(){
+            var number1 = parseInt(document.getElementById("num1").value);
+            var number2 = parseInt(document.getElementById("num2").value);
+            var result = number1+number2;
+            alert(result);
+        }
+    </script>
+</body>
+</html>
